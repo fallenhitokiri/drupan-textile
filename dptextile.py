@@ -26,7 +26,8 @@ class Plugin(object):
             if entity.raw:
                 self.convert(entity)
 
-    def convert(self, entity):
+    @staticmethod
+    def convert(entity):
         """
         convert entity.raw to HTML and store it in entity.content
 
